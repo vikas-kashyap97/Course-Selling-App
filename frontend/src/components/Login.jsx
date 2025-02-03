@@ -7,7 +7,7 @@ import { BACKEND_URL } from "../utils/utils";
 function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
+  const [showPassword, setShowPassword] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
 
   const navigate = useNavigate();
@@ -48,7 +48,7 @@ function Login() {
           <div className="flex items-center space-x-2">
             <img src={logo} alt="Logo" className="w-10 h-10 rounded-full" />
             <Link to={"/"} className="text-xl font-bold text-orange-500">
-              LearnFlow
+              CourseHaven
             </Link>
           </div>
           <div className="flex items-center space-x-4">
@@ -70,7 +70,7 @@ function Login() {
         {/* Login Form */}
         <div className="bg-gray-900 p-8 rounded-lg shadow-lg w-[500px] m-8 md:m-0 mt-20">
           <h2 className="text-2xl font-bold mb-4 text-center">
-            Welcome to <span className="text-orange-500">LearnFlow</span>
+            Welcome to <span className="text-orange-500">CourseHaven</span>
           </h2>
           <p className="text-center text-gray-400 mb-6">
             Log in to access paid content!
@@ -91,24 +91,22 @@ function Login() {
                 required
               />
             </div>
-            <div className="mb-4">
-              <label htmlFor="password" className=" text-gray-400 mb-2">
-                Password
-              </label>
-              <div className="relative">
-                <input
-                  type="password"
-                  id="password"
-                  value={password}
-                  onChange={(e) => setPassword(e.target.value)}
-                  className="w-full p-3 rounded-md bg-gray-800 border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  placeholder="********"
-                  required
-                />
-                <span className="absolute right-3 top-3 text-gray-500 cursor-pointer">
-                  👁️
-                </span>
-              </div>
+            <div className="relative">
+              <input
+                type={showPassword ? "text" : "password"}
+                id="password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                className="w-full p-3 rounded-md bg-gray-800 border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                placeholder="********"
+                required
+              />
+              <span
+                className="absolute right-3 top-3 text-gray-500 cursor-pointer"
+                onClick={() => setShowPassword(!showPassword)}
+              >
+                {showPassword ? "🙈" : "👁️"}
+              </span>
             </div>
             {errorMessage && (
               <div className="mb-4 text-red-500 text-center">
