@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import logo from "../../public/logo.webp";
 import { Link } from "react-router-dom";
-import { FaFacebook } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa";
 import axios from "axios";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -102,9 +102,7 @@ function Home() {
               alt=""
               className="w-7 h-7 md:w-10 md:h-10 rounded-full"
             />
-            <h1 className="md:text-2xl text-orange-500 font-bold">
-              CourseHaven
-            </h1>
+            <h1 className="md:text-2xl text-orange-500 font-bold">LearnFlow</h1>
           </div>
           <div className="space-x-4">
             {isLoggedIn ? (
@@ -135,13 +133,15 @@ function Home() {
 
         {/* Main section */}
         <section className="text-center py-20">
-          <h1 className="text-4xl font-semibold text-orange-500">
-            CourseHaven
-          </h1>
+          <h1 className="text-4xl font-semibold text-orange-500">LearnFlow</h1>
 
           <br />
-          <p className="text-gray-500">
-            Sharpen your skills with courses crafted by experts.
+          <p className="text-gray-400 text-lg md:text-xl sm:text-base">
+            Master new skills, boost your career, and stay ahead with expert-led
+            courses designed for learners of all levels. Whether you're a
+            beginner or a pro, LearnFlow offers hands-on lessons, real-world
+            projects, and in-depth tutorials to help you achieve your goals.
+            Start learning today and take the next step toward success!
           </p>
           <div className="space-x-4 mt-8">
             <Link
@@ -151,7 +151,7 @@ function Home() {
               Explore courses
             </Link>
             <Link
-              to={"https://www.youtube.com/learncodingofficial"}
+              to={"https://www.youtube.com/@parasmadan_in"}
               className="bg-white text-black  p-2 md:py-3 md:px-6 rounded font-semibold hover:bg-green-500 duration-300 hover:text-white"
             >
               Courses videos
@@ -173,7 +173,10 @@ function Home() {
                       <h2 className="text-xl font-bold text-white">
                         {course.title}
                       </h2>
-                      <Link to={`/buy/${course._id}`} className="mt-8 bg-orange-500 text-white py-2 px-4 rounded-full hover:bg-blue-500 duration-300">
+                      <Link
+                        to={`/buy/${course._id}`}
+                        className="mt-8 bg-orange-500 text-white py-2 px-4 rounded-full hover:bg-blue-500 duration-300"
+                      >
                         Enroll Now
                       </Link>
                     </div>
@@ -192,20 +195,20 @@ function Home() {
               <div className="flex items-center space-x-2">
                 <img src={logo} alt="" className="w-10 h-10 rounded-full" />
                 <h1 className="text-2xl text-orange-500 font-bold">
-                  CourseHaven
+                  LearnFlow
                 </h1>
               </div>
               <div className="mt-3 ml-2 md:ml-8">
                 <p className="mb-2">Follow us</p>
                 <div className="flex space-x-4">
-                  <a href="">
-                    <FaFacebook className="text-2xl hover:text-blue-400 duration-300" />
+                  <a href="https://github.com/vikas-kashyap97">
+                    <FaGithub className="text-2xl hover:text-gray-400 duration-300" />
                   </a>
-                  <a href="">
-                    <FaInstagram className="text-2xl hover:text-pink-600 duration-300" />
+                  <a href="https://www.linkedin.com/in/vikas-kashyap97">
+                    <FaLinkedin className="text-2xl hover:text-blue-600 duration-300" />
                   </a>
-                  <a href="">
-                    <FaTwitter className="text-2xl hover:text-blue-600 duration-300" />
+                  <a href="https://x.com/vikaskashyapro6">
+                    <FaXTwitter className="text-2xl hover:text-blue-600 duration-300" />
                   </a>
                 </div>
               </div>
@@ -213,21 +216,38 @@ function Home() {
 
             <div className="items-center mt-6 md:mt-0 flex flex-col">
               <h3 className="text-lg font-semibold md:mb-4">connects</h3>
-              <ul className=" space-y-2 text-gray-400">
-                <li className="hover:text-white cursor-pointer duration-300">
-                  youtube- learn coding
-                </li>
-                <li className="hover:text-white cursor-pointer duration-300">
-                  telegram- learn coding
-                </li>
-                <li className="hover:text-white cursor-pointer duration-300">
-                  Github- learn coding
-                </li>
-              </ul>
+              <div className="flex flex-col space-y-2 text-gray-400">
+                <ul className="flex flex-col space-y-2">
+                  <li>
+                    <a
+                      href="https://www.youtube.com/@parasmadan_in"
+                      className="hover:text-white cursor-pointer duration-300"
+                    >
+                       YouTube - Learn Coding
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://x.com/vikaskashyapro6"
+                      className="hover:text-white cursor-pointer duration-300"
+                    >
+                       X (Twitter) - Learn Coding
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://github.com/vikas-kashyap97"
+                      className="hover:text-white cursor-pointer duration-300"
+                    >
+                       GitHub - Learn Coding
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
             <div className="items-center mt-6 md:mt-0 flex flex-col">
               <h3 className="text-lg font-semibold mb-4">
-                copyrights &#169; 2024
+                copyrights &#169; 2025
               </h3>
               <ul className=" space-y-2 text-center text-gray-400">
                 <li className="hover:text-white cursor-pointer duration-300">
