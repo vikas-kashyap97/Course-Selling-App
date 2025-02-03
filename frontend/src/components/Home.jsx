@@ -136,7 +136,7 @@ function Home() {
           <h1 className="text-4xl font-semibold text-orange-500">LearnFlow</h1>
 
           <br />
-          <p className="text-gray-400 text-lg md:text-xl sm:text-base">
+          <p className="text-gray-400 px-3 text-lg md:text-xl sm:text-base">
             Master new skills, boost your career, and stay ahead with expert-led
             courses designed for learners of all levels. Whether you're a
             beginner or a pro, LearnFlow offers hands-on lessons, real-world
