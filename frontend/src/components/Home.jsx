@@ -170,7 +170,7 @@ function Home() {
                       alt=""
                     />
                     <div className="p-6 text-center">
-                      <h2 className="text-xl font-bold text-white">
+                      <h2 className="text-xl font-bold pb-6 text-white">
                         {course.title}
                       </h2>
                       <Link
