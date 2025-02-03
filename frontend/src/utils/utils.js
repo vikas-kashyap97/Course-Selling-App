@@ -1,2 +1,2 @@
-export const BACKEND_URL = "https://course-selling-app-w5pg.onrender.com";
+export const BACKEND_URL = "https://course-selling-app-w5pg.onrender.com/api/v1";
 
