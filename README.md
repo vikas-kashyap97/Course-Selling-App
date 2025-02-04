@@ -1,4 +1,4 @@
-# 🛍️ E-Commerce Website
+# 🛍️ E-Commerce Website (LearnFlow)
 
 ## Overview
 Welcome to the **E-Commerce Website** repository! This project is a simple e-commerce application where users can browse products, add them to their cart, and place orders.  
