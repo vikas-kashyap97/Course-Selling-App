@@ -3,8 +3,8 @@
 ## Overview
 Welcome to the **E-Commerce Website** repository! This project is a simple e-commerce application where users can browse products, add them to their cart, and place orders.  
 
-**Live Demo:** [https://course-selling-app-kappa.vercel.app/](https://course-selling-app-kappa.vercel.app/)  
-**GitHub Repository:** [https://github.com/vikas-kashyap97/Course-Selling-App.git](https://github.com/vikas-kashyap97/Course-Selling-App.git)
+**Live Demo:** [Live Link](https://course-selling-app-kappa.vercel.app/)  
+**GitHub Repository:** [Github](https://github.com/vikas-kashyap97/Course-Selling-App.git)
 
 ## Features
 - 🛒 **Product Listing Page:** Displays a grid of products with images, descriptions, and prices.
